@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="trivia.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Welcome to App Trivia" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Label Text="Introduce your name" FontSize="Title" Padding="30,10,30,10" HorizontalTextAlignment="Center"/>
+        <Entry x:Name="txtName"
+               Placeholder="Name"
+               MaxLength="10"
+               IsSpellCheckEnabled="True"
+               IsTextPredictionEnabled="True"
+               IsPassword="False"
+               Keyboard="Text"
+               />
+        <Button x:Name="btnStart"
+                Text="Start"
+                BackgroundColor="Blue"
+                BorderColor="Black"
+                CornerRadius="20"
+                Clicked="Button_Clicked"
+                />
+    </StackLayout>
+
+</ContentPage>

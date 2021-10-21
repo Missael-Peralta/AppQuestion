@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="trivia.QuestionPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#005F98" Padding="24" CornerRadius="0">
+                <Label Text="What was the first cell phone company that came to Mexico offering its services?" HorizontalTextAlignment="Center" TextColor="Black" FontSize="20"/>
+            </Frame>
+            <Button x:Name="btnRes1"
+                Text="Motorola"
+                BackgroundColor="#C02B2B"
+                BorderColor="Black"
+                CornerRadius="20"
+                WidthRequest="30"
+                HeightRequest="50"
+                Margin="30"
+                Clicked="btnRes1_Clicked"
+                />
+            <Button x:Name="btnRes2"
+                Text="Iusacell"
+                BackgroundColor="#C02B2B"
+                BorderColor="Black"
+                CornerRadius="20"
+                WidthRequest="30"
+                HeightRequest="50"
+                Margin="30"
+                Clicked="btnRes2_Clicked"
+                />
+            <Button x:Name="btnRes3"
+                Text="Nokia"
+                BackgroundColor="#C02B2B"
+                BorderColor="Black"
+                CornerRadius="20"
+                WidthRequest="30"
+                HeightRequest="50"
+                Margin="30"
+                Clicked="btnRes3_Clicked"
+                />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
